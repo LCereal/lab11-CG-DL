@@ -1,3 +1,7 @@
+# https://github.com/LCereal/lab11-CG-DL
+# Partner 1: Cyryl Gildore
+# Partner 2: David Losada
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
@@ -32,6 +36,8 @@ def subtract(a, b):
 
 def logarithm(a, b):
     if b <= 0:
+        raise ValueError
+    if a == 0:
         raise ValueError
     return math.log(a, b)
 
